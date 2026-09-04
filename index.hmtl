@@ -1,0 +1,37 @@
+<!DOCTYPE! html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Olivumble</title>
+</head>
+<body>
+    <div id="login">
+        <img id="logo">
+        <button id="login button" type="button">Are you Olivia?</button>
+    </div>
+
+    <div id="pop-up">
+        <h1 id="pop-up-title">Are you Sure?</h1>
+        <h3 id="pop-up-text">Nah wala ko pake go lang</h3>
+        <button id="pop-up-continue">Continue</button>
+    </div>
+
+    <div id="main">
+        <div id="card">
+            <img id="profile">
+            <h1 id="name"></h1>
+            <h3 id="pronouns"></h3>
+            <div id ="s-description">
+                <p></p>
+            </div>
+        </div>
+
+        <div id="back-card">
+            <div id ="description">
+                <h1 id="desc">About Me</h1>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
