@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+body {
+    background-color: #f4f5f7;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+@media (min-width: 600px) {
+    body::before {
+        content: "SA PHONE NGANIIIIIIIIII APAKA KULETTTT";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffc629;
+        color: #111;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        z-index: 9999;
+    }
+    #login, #main, #pop-up {
+        display: none !important;
+    }
+}
+#login, #main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+#logo {
+    width: 120px;
+    height: 120px;
+    background-color: transparent; 
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+#title {
+    color: #ffc629;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+button {
+    background-color: #ffc629;
+    color: #111;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    z-index: 100;
+    width: 85%;
+    max-width: 350px;
+}
+#pop-up-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+#pop-up-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 25px;
+}
+#pop-up-continue {
+    background-color: #ffc629; 
+    color: #111;
+    width: 100%;
+}
+#main {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffc629;
+}
+#card, #back-card {
+    width: 100%;
+    height: 98%;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#profile {
+    width: 100%;
+    height: 70%;
+    background-color: #ddd; 
+    object-fit: cover;
+}
+#name {
+    font-size: 2rem;
+    margin: 15px 20px 2px;
+    color: #111;
+    font-weight: 800;
+}
+
+#pronouns {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #888;
+    margin: 0 20px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#s-description p {
+    margin: 0 20px 20px;
+    background-color: #f4f5f700;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+#back-card {
+    padding: 30px 25px;
+    background-color: white; 
+}
+#desc {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #f4f5f7;
+}
+#description p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+.swipe-left {
+    animation: swipeLeftAnim 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+.swipe-right {
+    animation: swipeRightAnim 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+@keyframes swipeLeftAnim {
+    0% { transform: translateX(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateX(-150%) rotate(-15deg); opacity: 0; }
+}
+@keyframes swipeRightAnim {
+    0% { transform: translateX(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateX(150%) rotate(15deg); opacity: 0; }
+}

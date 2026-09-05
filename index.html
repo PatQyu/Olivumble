@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olivumble</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="login">
-        <img id="logo">
-        <button id="login button" type="button">Are you Olivia?</button>
+        <img id="logo" src="srcs\BMBL-76217665.png">
+        <h1 id="title">OLIVUMBLE</h1>
+        <button id="login-button" type="button">Are you Olivia?</button>
     </div>
 
-    <div id="pop-up">
-        <h1 id="pop-up-title">Are you Sure?</h1>
+    <div id="pop-up" style="display : none;">
+        <h1 id="pop-up-title">Si liv ka ba talaga?</h1>
         <h3 id="pop-up-text">Nah wala ko pake go lang</h3>
         <button id="pop-up-continue">Continue</button>
     </div>
 
-    <div id="main">
+    <div id="main" style="display : none;">
         <div id="card">
             <img id="profile">
             <h1 id="name"></h1>
@@ -26,12 +29,13 @@
             </div>
         </div>
 
-        <div id="back-card">
+        <div id="back-card" style="display : none;">
             <div id ="description">
                 <h1 id="desc">About Me</h1>
                 <p></p>
             </div>
         </div>
     </div>
+    <script src="config.js"></script>
 </body>
 </html>
